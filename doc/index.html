@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策 | 谷歌学术助手（Google Scholar Assistant）</title>
+  <style>
+    :root { --w: 820px; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      margin: 0; padding: 0; line-height: 1.75; color: #0f172a; background: #f8fafc;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .container { max-width: var(--w); margin: 0 auto; padding: 24px; }
+    .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 12px; background:#eef2ff; color:#3730a3; margin-bottom: 8px; }
+    h1 { font-size: 28px; margin: 8px 0 4px; }
+    main { max-width: var(--w); margin: 24px auto; padding: 0 24px 80px; }
+    section { background: white; border:1px solid #e2e8f0; border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+    h2 { font-size: 18px; margin: 0 0 10px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 22px; }
+    footer { text-align: center; color:#475569; padding: 24px; font-size: 13px; }
+    a { color:#2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color:#475569; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="badge">Google Scholar Assistant</div>
+      <h1>隐私政策</h1>
+      <p class="muted">最后更新：<time>2025-10-02</time></p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>概述</h2>
+      <p>谷歌学术助手（Google Scholar Assistant，下称“本扩展”）重视并尊重您的隐私。本隐私政策说明我们如何处理您的数据。</p>
+    </section>
+
+    <section>
+      <h2>我们收集哪些数据</h2>
+      <ul>
+        <li><strong>不收集任何个人身份信息（PII）。</strong></li>
+        <li>您的期刊分类、偏好设置与过滤条件仅保存在 <code>chrome.storage</code> 本地存储中。</li>
+        <li>本扩展不会将任何数据传输到开发者或第三方服务器。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>我们如何使用数据</h2>
+      <ul>
+        <li>仅用于在本地为您提供功能：提取论文信息、显示中科院/JCR 分区、批量获取摘要、导出 RIS 引用等。</li>
+        <li>内置的中科院与 JCR 分区数据来自扩展内的静态文件，不包含用户隐私信息。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>权限与目的</h2>
+      <ul>
+        <li><code>activeTab</code>：仅在您主动使用扩展时访问当前标签页以提取学术信息。</li>
+        <li><code>storage</code>：保存期刊分类与个性化设置于本地。</li>
+        <li><code>scripting</code>：向 Google Scholar 页面注入必要脚本以呈现功能按钮与分区标识。</li>
+        <li><code>clipboardWrite</code>：将引用信息（如 RIS）复制到剪贴板。</li>
+        <li><code>tabs</code>：识别并与 Google Scholar 相关页面交互。</li>
+        <li>主机权限 <code>https://scholar.google.com/*</code>：仅用于在该域名下运行核心功能。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>数据共享与第三方</h2>
+      <p>我们不向任何第三方出售、交易或共享您的数据，也不进行广告追踪。</p>
+    </section>
+
+    <section>
+      <h2>数据保留与删除</h2>
+      <ul>
+        <li>所有扩展生成的数据均保存在您的设备上。</li>
+        <li>您可在扩展设置中清除数据，或卸载扩展以删除所有相关本地数据。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>儿童隐私</h2>
+      <p>本扩展面向科研与学习人群，不面向 13 岁以下的儿童。我们不会有意收集儿童的个人信息。</p>
+    </section>
+
+    <section>
+      <h2>政策更新</h2>
+      <p>如本政策有重大变更，我们将更新本文档的“最后更新”日期。继续使用本扩展即表示您接受更新后的政策。</p>
+    </section>
+
+    <section>
+      <h2>联系我们</h2>
+      <p>如对本政策有疑问或建议，请联系作者：<strong>goku_xmu</strong>（或在项目仓库提交 Issue）。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Google Scholar Assistant. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
